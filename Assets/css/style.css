@@ -231,5 +231,10 @@ h3{
 
 /* REACH OUT SECTION */
 .contact-info{
-    
+    text-align: center;
+    background: #024e76;
+}
+
+.contact-info h2{
+    color: #fce138;
 }
