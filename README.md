@@ -13,8 +13,4 @@ https://lernantino.github.io/run-buddy/
 ## Contribution
 Made with ❤️ by Sydney Creel
 
-<<<<<<< HEAD
 ©️2019 Run Buddy, Inc
-=======
-©️2019 Run Buddy, Inc
->>>>>>> 9b1e4d7ae010931af4e0035591703b9581d28689
