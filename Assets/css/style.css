@@ -9,10 +9,6 @@ body {
     color: #39a6b2;
 }
 
-section {
-    padding: 60px;
-}
-
 /* HEADER */
 header {
     padding: 20px 35px;
@@ -54,50 +50,38 @@ header nav ul li a{
 
 /* HEADER END */
 
-/* FOOTER */
-footer{
-    background: #fce138;
-    width: 100%;
-    padding: 40px 35px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-footer h2{
-    color: #024e76;
-    font-size: 30px;
-    margin: 0;
-}
-
-footer div{
-    line-height: 1.5;
-    text-align: right;
-}
-
-footer a {
-    color: #024e76;
-}
-/* FOOTER END */
-
 /* HERO STYLE */
 .hero{
     background-image: url("../images/hero-bg.jpg");
-    height: 600px;
     background-size: cover;
     background-position: center;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .hero-form{
     color: #024e76;
     background-color: #fce138;
     padding: 20px;
-    width: 500px;
     border: solid 3px #024e76;
-    position: absolute;
-    bottom: 120px;
-    right: 140px;
+    width: 40%;
+    margin: 3.5%;
+}
+
+.hero-cta{
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.hero-cta h2{
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
 }
 
 h3{
@@ -131,6 +115,36 @@ h3{
     margin-bottom: 15px;
 }
 /* HERO STYLE END */
+
+/* FOOTER */
+footer{
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer h2{
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div{
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: #024e76;
+}
+/* FOOTER END */
+
+section {
+    padding: 60px;
+}
 
 .section-title{
     font-size: 55px;
