@@ -30,11 +30,11 @@ header a {
     color: #fce138;
 }
 
-header nav{
+header nav {
     margin: 7px 0;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -42,7 +42,7 @@ header nav ul{
     list-style: none;
 }
 
-header nav ul li a{
+header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
@@ -50,7 +50,7 @@ header nav ul li a{
 /* HEADER END */
 
 /* HERO STYLE */
-.hero{
+.hero {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
     background-position: center;
@@ -60,7 +60,7 @@ header nav ul li a{
     align-items: flex-start;
 }
 
-.hero-form{
+.hero-form {
     color: #024e76;
     background-color: #fce138;
     padding: 20px;
@@ -69,7 +69,7 @@ header nav ul li a{
     margin: 3.5%;
 }
 
-.hero-cta{
+.hero-cta {
     width: 35%;
     text-align: right;
     margin: 3.5%;
@@ -78,26 +78,26 @@ header nav ul li a{
     line-height: 1.2;
 }
 
-.hero-cta h2{
+.hero-cta h2 {
     font-style: italic;
     font-size: 55px;
     color: #fce138;
 }
 
-h3{
+h3 {
     margin: 0;
     font-size: 24px;
 }
 
-.hero-form p{
+.hero-form p {
     margin: 5px 0 15px 0;
 }
 
-.hero-form label{
+.hero-form label {
     margin: 0 5px;
 }
 
-.hero-form button{
+.hero-form button {
     color: #fce138;
     background-color: #024e76;
     font-size: 16px;
@@ -105,7 +105,7 @@ h3{
     padding: 10px 20px;
 }
 
-.form-input{
+.form-input {
     border: 1px solid #024e76;
     display: block;
     padding: 7px 15px;
@@ -117,7 +117,7 @@ h3{
 /* HERO STYLE END */
 
 /* WHAT WE DO SECTION */
-.intro p{
+.intro p {
     line-height: 1.7;
     color: #39a6b2;
     width: 80%;
@@ -128,10 +128,10 @@ h3{
 /* WHAT WE DO SECTION END */
 
 /* WHAT YOU DO SECTION */
-#what-you-do{
+#what-you-do {
     background: #fce138;
 }
-.steps{
+.steps {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
@@ -142,46 +142,46 @@ h3{
     justify-content: space-between;
 }
 
-.steps h3{
+.steps h3 {
     color: #024e76;
     font-size: 46px;
     flex: 1 30%;
 }
 
-.steps-text{
+.steps-text {
     flex:12;
 }
 
-.steps-text p{
+.steps-text p {
     color: #39a6b2;
     font-size: 18px;
 }
 
-.steps-text h4{
+.steps-text h4 {
     font-size: 26px;
     line-height: 1.5;
     color: #024e76;
 }
 
-.steps-info{
+.steps-info {
     flex: 2 70%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.steps-img{
+.steps-img {
     flex: 1 12%;
     margin-right: 20px;
 }
 
-.steps-img img{
+.steps-img img {
     max-width: 100%;
 }
 /* WHAT YOU DO SECTION END */
 
 /* TRAINERS SECTION */
-.trainers{
+.trainers {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -189,18 +189,18 @@ h3{
     justify-content: space-around;
 }
 
-.trainer{
+.trainer {
     margin: 20px;
     color: #fce138;
     background: #024e76;
     flex: 1;
 }
 
-.trainer img{
+.trainer img {
     width: 100%;
 }
 
-.trainer-bio{
+.trainer-bio {
     padding: 25px;
     line-height: 1.3;
 }
@@ -209,19 +209,33 @@ h3{
     font-size: 28px;
 }
 
-.trainer-bio h4{
+.trainer-bio h4 {
     font-weight: lighter;
     font-size: 22px;
     margin-bottom: 15px;
 }
 
-.trainer-bio p{
+.trainer-bio p {
     font-size: 17px;
 }
 /* TRAINERS SECTION END */
 
+/* SERVICE PLAN SECTION */
+.service-grid-container {
+    display: grid;
+}
+
+.service-grid-item {
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    border: solid;
+    color: black;
+}
+/* SERVICE PLAN END */
+
 /* REACH OUT SECTION */
-.contact-info{
+.contact-info {
     background: #024e76;
     display: flex;
     justify-content: space-between;
@@ -233,28 +247,30 @@ h3{
     margin: 15px;
 }
 
-.contact-info iframe{
+.contact-info iframe {
     height: 400;
 }
 
-.contact-info h2{
+.contact-info h2 {
     color: #fce138;
 }
 
-.contact-info p{
+.contact-info p {
     font-size: 16px;
     line-height: 1.5;
 }
 
-.contact-info div{
+.contact-info div {
     color: #fce138;
 }
 
-.contact-info address{
+.contact-info address a {
     font-size: 16px;
+    text-decoration: none;
+    color: #fce138;
 }
 
-.contact-form input, .contact-form textarea{
+.contact-form input, .contact-form textarea {
     border: 1px solid #024e76;
     display: block;
     padding: 7px 15px;
@@ -265,7 +281,7 @@ h3{
     margin-top: 5px;
 }
 
-.contact-form button{
+.contact-form button {
     width: 100%;
     border: none;
     background: #fce138;
@@ -302,6 +318,19 @@ footer a {
 }
 /* FOOTER END */
 
+/* UTILITY CLASSES */
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.flex-row{
+    display: flex;
+}
+
 section {
     padding: 60px;
 }
@@ -322,20 +351,7 @@ section {
 .secondary-border{
     border-color: #39a6b2;
 }
-
-/* UTILITY CLASSES */
-.text-left{
-    text-align: left;
-}
-
-.text-right{
-    text-align: right;
-}
-
-.flex-row{
-    display: flex;
-}
-
+/* UTILITY CLASSES END */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
