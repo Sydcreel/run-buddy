@@ -27,9 +27,12 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* accomodates Safari */
     position: -webkit-sticky;
+    /* keeps header nav at top when scrolling */
     position: sticky;
     top: 0;
+    /* keeps header nav on top of everything on page */
     z-index: 9999;
 }
 
@@ -297,8 +300,68 @@ h3 {
     flex: 1;
 }
 
-.trainer img {
+.trainer-img {
     width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.trainer-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(252, 225, 56, 0.3), rgba(2, 78, 118, 1));
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.trainer-img:hover::after {
+    opacity: 1;
+}
+
+.trainer-img h3 {
+    font-size: 28px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 5px;
+    top: 200px;
+    transition: .6s;
+}
+
+.trainer-img h4 {
+    font-size: 22px;
+    position: relative;
+    z-index: 1;
+    top: 200px;
+    transition: .6s;
+}
+
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+    top: 0px;
+}
+
+.trainer-1 {
+    background-image: url(../Images/trainer-1.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.trainer-2 {
+    background-image: url(../Images/trainer-2.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.trainer-3 {
+    background-image: url(../Images/trainer-3.jpg);
+    background-size: cover;
+    position: relative;
 }
 
 .trainer-bio {
